@@ -164,8 +164,8 @@ function playerMove () {
       move = "o";
     }
     playTurn(turn);
-    whoWon();
     $(this).text(move);
+    whoWon();
     console.log(player);
     if (whoWon() === 1) {
       alert("Congratulations, Player X! You are the Tic Tac Toe Master.");
@@ -192,7 +192,7 @@ function playerMove () {
     } else {
       console.log("computer moved");
       move = "o";
-      randomMove();
+      setTimeout(randomMove(),1000);
       console.log("random move made")
       playTurn(compTurn);
       $("#" + compTurn).text(move);
