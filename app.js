@@ -79,8 +79,6 @@ function whoWon () {
 /* jQuery */
 $(document).ready(function () {
   $("#sd").click(timerStart);
-  $(".button").click(newGame);
-  $("#singlePlayer").click(singlePlayer);
   // playerMove
   if (player) grid = [null, null, null, null, null, null, null, null, null];
     $("#0").click(playerMove);
@@ -92,6 +90,9 @@ $(document).ready(function () {
     $("#6").click(playerMove);
     $("#7").click(playerMove);
     $("#8").click(playerMove);
+  $(".button").click(newGame);
+  $("#singlePlayer").click(singlePlayer);
+
 });
 
 /* Timer */
